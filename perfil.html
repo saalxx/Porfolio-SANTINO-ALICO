@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,16 +12,16 @@
 </head>
 
 <body>
-
-  
   <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">
-        <img src="img/logoPrincipal.png" alt="" class="logoPrincipal">
+        <img src="img/logoPrincipal.png" alt="Logo" class="logoPrincipal img-fluid">
       </a>
+
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
@@ -33,105 +32,152 @@
       </div>
     </div>
   </nav>
-
-  
-  <section class="jumbotron-custom text-center">
+  <header class="jumbotron-custom text-center">
     <div class="container">
       <h1 class="display-4">Santino Rodolfo Alico</h1>
       <p class="lead">Sobre mí</p>
     </div>
-  </section>
-
-  
-  <section class="container my-5">
+  </header>
+  <header class="container my-5">
     <div class="row align-items-center g-4">
-      <div class="col-md-4 text-center">
-       <img src="img/fotoCarnet.jpeg" alt="" class="img-fluid rounded-4 shadow">
-      </div>
+      <div class="col-12 col-md-4 text-center">
+        <div class="media-hover" onclick="manejarClick(this, event)" onmouseenter="hoverIn(this)"
+          onmouseleave="hoverOut(this)">
 
-      <div class="col-md-8">
-        <div class="card p-4">
+          <img src="img/fotoCarnet.jpeg" class="img-fluid rounded mb-2" alt="Foto de Santino">
+
+          <video class="w-100 rounded" muted>
+            <source src="img/video-output-228549D3-0AD1-43DB-A5DA-2BC6E0B7E806-1.mp4" type="video/mp4">
+          </video>
+
+        </div>
+      </div>
+      <div class="col-12 col-md-8">
+        <div class="card p-4 h-100">
           <h2 class="card-title mb-3">¿Quién soy?</h2>
           <p>
-            Me llamo Santino Alico, tengo 19 años. <br>
-            Soy desarrollador web en formación con una gran motivación por crear proyectos funcionales, accesibles y visualmente atractivos.
+            Me llamo Santino Alico, tengo 19 años.<br>
+            Soy desarrollador web en formación con una gran motivación por crear proyectos funcionales,
+            accesibles y visualmente atractivos.
           </p>
           <p>
             Me considero una persona responsable, constante y con facilidad para trabajar
-            en equipo, siempre con ganas de aprender nuevas tecnologías y mejorar como profesional.
+            en equipo, siempre con ganas de aprender nuevas tecnologías.
           </p>
         </div>
       </div>
+
     </div>
-  </section>
-
-
-  <section class="container my-5">
+  </header>
+  <header class="container my-5">
     <h2 class="text-center mb-4">Formación académica</h2>
 
     <div class="row g-4 justify-content-center">
-      <div class="col-md-4 project-card-wrapper">
-        <div class="card text-center p-3">
+      <div class="col-12 col-md-4">
+        <div class="card text-center p-3 h-100">
           <h5 class="card-title">Desarrollo de Aplicaciones Web</h5>
           <p>Florida Universitària</p>
           <p class="text-muted">2024 – Actualidad</p>
         </div>
       </div>
 
-      <div class="col-md-4 project-card-wrapper">
-        <div class="card text-center p-3">
+      <div class="col-12 col-md-4">
+        <div class="card text-center p-3 h-100">
           <h5 class="card-title">Sistemas Microinformáticos y Redes</h5>
           <p>Florida Universitària</p>
           <p class="text-muted">2022 - 2024</p>
         </div>
       </div>
     </div>
-  </section>
-
-  
-  <section class="container my-5 text-center">
+  </header>
+  <header class="container my-5 text-center">
     <h2 class="mb-4">Competencias</h2>
 
-    <div class="d-flex flex-wrap justify-content-center gap-3">
-      <span class="btn btn-sar">Bootstrap</span>
-      <span class="btn btn-sar">JavaScript</span>
-      <span class="btn btn-sar">PHP</span>
-      <span class="btn btn-sar">Angular</span>
-      <span class="btn btn-sar">Symfony</span>
+    <div class="d-flex flex-wrap justify-content-center gap-2">
+      <span class="btn btn-sar btn-sm">Bootstrap</span>
+      <span class="btn btn-sar btn-sm">JavaScript</span>
+      <span class="btn btn-sar btn-sm">PHP</span>
+      <span class="btn btn-sar btn-sm">Angular</span>
+      <span class="btn btn-sar btn-sm">Symfony</span>
     </div>
-  </section>
-
-  
+  </header>
   <footer class="pt-4">
     <div class="container">
-      <div class="row text-center text-md-start">
-
-        <div class="col-md-3 mb-3">
+      <div class="row text-center text-md-start align-items-center">
+        <div class="col-12 col-md-3 mb-3 d-flex justify-content-center">
+          <iframe src="https://www.google.com/maps?q=Florida%20Universit%C3%A0ria,%20Catarroja&output=embed"
+            class="map-container"></iframe>
+        </div>
+        <div class="col-12 col-md-3 mb-3 text-center">
+          <p class="derechosImgaen mb-0">
+            &copy; 2024 Santino Rodolfo Alico.<br>
+            Todos los derechos reservados.
+          </p>
+        </div>
+        <div class="col-12 col-md-3 mb-3 d-flex justify-content-center gap-2">
+          <a href="tel:+34622718731">
+            <img src="img/imgTelefono.png" class="img-fluid Logos" alt="Teléfono">
+          </a>
           <a href="https://www.instagram.com/santialico/">
-            <img src="img/instaBuenFondo.png" alt="" class="Logos">
+            <img src="img/instaBuenFondo.png" class="img-fluid Logos" alt="Instagram">
           </a>
           <a href="mailto:santinoalico5@gmail.com">
-            <img src="img/imgCorreo.png" alt="" class="Logos">
-          </a>
-          <a href="tel:+34622718731">
-            <img src="img/imgTelefono.png" alt="" class="Logos">
+            <img src="img/imgCorreo.png" class="img-fluid Logos" alt="Correo">
           </a>
           <a href="https://www.linkedin.com/in/santino-alico-174660329/">
-            <img src="img/imgLINKEDING.png" alt="" class="Logos">
+            <img src="img/imgLINKEDING.png" class="img-fluid Logos" alt="LinkedIn">
           </a>
         </div>
-
-        <div class="map-container">
-          <iframe
-            src="https://www.google.com/maps?q=Florida%20Universit%C3%A0ria,%20Catarroja&output=embed"
-            width="100%" height="120" style="border:0;" allowfullscreen="" loading="lazy">
-          </iframe>
+        <div class="col-12 col-md-3 mb-3 d-flex justify-content-center">
+          <a href="img/SANTINO ALICO CV (2).pdf" class="btn btn-outline-light btn-sm" target="_blank" download>
+            📄 Descargar CV
+          </a>
         </div>
 
       </div>
     </div>
   </footer>
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    let lastTap = 0;
+
+    function manejarClick(container, e) {
+      e.preventDefault();
+
+      const video = container.querySelector("video");
+      const ahora = Date.now();
+
+      if (ahora - lastTap < 300) {
+        video.pause();
+        video.currentTime = 0;
+        container.classList.remove("activo");
+        lastTap = 0;
+        return;
+      }
+
+      lastTap = ahora;
+
+      if (!container.classList.contains("activo")) {
+        container.classList.add("activo");
+        video.muted = false;
+        video.play();
+        return;
+      }
+
+      video.paused ? video.play() : video.pause();
+    }
+
+    function hoverIn(container) {
+      if (container.classList.contains("activo")) return;
+      container.classList.add("preview");
+    }
+
+    function hoverOut(container) {
+      if (container.classList.contains("activo")) return;
+      container.classList.remove("preview");
+    }
+  </script>
+
 </body>
+
 </html>
