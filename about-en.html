@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sobre mí · Portfolio SAR</title>
+  <title>About Me · SAR Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&family=Inter:wght@400;500&display=swap"
     rel="stylesheet">
@@ -24,33 +24,35 @@
 
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
-          <li class="nav-item"><a class="nav-link active" href="perfil.html">Sobre mí</a></li>
-          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="index-en.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects-en.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about-en.html">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact-en.html">Contact</a></li>
         </ul>
       </div>
       <div class="ms-3">
         <select class="language-switcher-minimal" onchange="changeLanguage(this.value)">
-        <option value="es">🇪🇸 Español</option>
         <option value="en">🇬🇧 English</option>
+        <option value="es">🇪🇸 Español</option>
       </select>
       </div>
     </div>
   </nav>
+
   <header class="jumbotron-custom text-center">
     <div class="container">
       <h1 class="display-4">Santino Rodolfo Alico</h1>
-      <p class="lead">Sobre mí</p>
+      <p class="lead">About Me</p>
     </div>
   </header>
+
   <header class="container my-5">
     <div class="row align-items-center g-4">
       <div class="col-12 col-md-4 text-center">
         <div class="media-hover" onclick="manejarClick(this, event)" onmouseenter="hoverIn(this)"
           onmouseleave="hoverOut(this)">
 
-          <img src="img/fotoCarnet.jpeg" class="img-fluid rounded mb-2" alt="Foto de Santino">
+          <img src="img/fotoCarnet.jpeg" class="img-fluid rounded mb-2" alt="Photo of Santino">
 
           <video class="w-100 rounded" muted>
             <source src="img/video-output-228549D3-0AD1-43DB-A5DA-2BC6E0B7E806-1.mp4" type="video/mp4">
@@ -58,46 +60,48 @@
 
         </div>
       </div>
+
       <div class="col-12 col-md-8">
         <div class="card p-4 h-100">
-          <h2 class="card-title mb-3">¿Quién soy?</h2>
+          <h2 class="card-title mb-3">Who am I?</h2>
           <p>
-            Me llamo Santino Alico, tengo 19 años.<br>
-            Soy desarrollador web en formación con una gran motivación por crear proyectos funcionales,
-            accesibles y visualmente atractivos.
+            My name is Santino Alico, I am 19 years old.<br>
+            I am a web developer in training with strong motivation to create functional,
+            accessible, and visually appealing projects.
           </p>
           <p>
-            Me considero una persona responsable, constante y con facilidad para trabajar
-            en equipo, siempre con ganas de aprender nuevas tecnologías.
+            I consider myself a responsible and consistent person, with strong teamwork skills
+            and a constant desire to learn new technologies.
           </p>
         </div>
       </div>
-
     </div>
   </header>
+
   <header class="container my-5">
-    <h2 class="text-center mb-4">Formación académica</h2>
+    <h2 class="text-center mb-4">Academic Background</h2>
 
     <div class="row g-4 justify-content-center">
       <div class="col-12 col-md-4">
         <div class="card text-center p-3 h-100">
-          <h5 class="card-title">Desarrollo de Aplicaciones Web</h5>
+          <h5 class="card-title">Web Application Development</h5>
           <p>Florida Universitària</p>
-          <p class="text-muted">2024 – Actualidad</p>
+          <p class="text-muted">2024 – Present</p>
         </div>
       </div>
 
       <div class="col-12 col-md-4">
         <div class="card text-center p-3 h-100">
-          <h5 class="card-title">Sistemas Microinformáticos y Redes</h5>
+          <h5 class="card-title">Microcomputer Systems and Networks</h5>
           <p>Florida Universitària</p>
-          <p class="text-muted">2022 - 2024</p>
+          <p class="text-muted">2022 – 2024</p>
         </div>
       </div>
     </div>
   </header>
+
   <header class="container my-5 text-center">
-    <h2 class="mb-4">Competencias</h2>
+    <h2 class="mb-4">Skills</h2>
 
     <div class="d-flex flex-wrap justify-content-center gap-2">
       <span class="btn btn-sar btn-sm">Bootstrap</span>
@@ -107,6 +111,7 @@
       <span class="btn btn-sar btn-sm">Symfony</span>
     </div>
   </header>
+
   <footer class="pt-4">
     <div class="container">
       <div class="row text-center text-md-start align-items-center">
@@ -117,18 +122,18 @@
         <div class="col-12 col-md-3 mb-3 text-center">
           <p class="derechosImgaen mb-0">
             &copy; 2024 Santino Rodolfo Alico.<br>
-            Todos los derechos reservados.
+            All rights reserved.
           </p>
         </div>
         <div class="col-12 col-md-3 mb-3 d-flex justify-content-center gap-2">
           <a href="tel:+34622718731">
-            <img src="img/imgTelefono.png" class="img-fluid Logos" alt="Teléfono">
+            <img src="img/imgTelefono.png" class="img-fluid Logos" alt="Phone">
           </a>
           <a href="https://www.instagram.com/santialico/">
             <img src="img/instaBuenFondo.png" class="img-fluid Logos" alt="Instagram">
           </a>
           <a href="mailto:santinoalico5@gmail.com">
-            <img src="img/imgCorreo.png" class="img-fluid Logos" alt="Correo">
+            <img src="img/imgCorreo.png" class="img-fluid Logos" alt="Email">
           </a>
           <a href="https://www.linkedin.com/in/santino-alico-174660329/">
             <img src="img/imgLINKEDING.png" class="img-fluid Logos" alt="LinkedIn">
@@ -136,13 +141,13 @@
         </div>
         <div class="col-12 col-md-3 mb-3 d-flex justify-content-center">
           <a href="img/SANTINO ALICO CV (2).pdf" class="btn btn-outline-light btn-sm" target="_blank" download>
-            📄 Descargar CV
+            📄 Download CV
           </a>
         </div>
-
       </div>
     </div>
   </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script>
     let lastTap = 0;
@@ -217,5 +222,4 @@
   </script>
 
 </body>
-
 </html>

@@ -361,13 +361,12 @@ body {
   top: 0;
 }
 
-.languageSwitcher{
+
+.language-switcher-minimal {
   color: white;
   background-color: #1A1A40;
   border: none;
   font-size: 1.1em;
-  margin-left: 20px;
 }
-
 
 
