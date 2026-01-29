@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Me · SAR Portfolio</title>
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&family=Inter:wght@400;500&display=swap"
     rel="stylesheet">
@@ -12,120 +14,152 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">
-        <img src="img/logoPrincipal.png" alt="Logo" class="logoPrincipal img-fluid">
-      </a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <!-- HEADER / NAV -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
 
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index-en.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="projects-en.html">Projects</a></li>
-          <li class="nav-item"><a class="nav-link active" href="about-en.html">About Me</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact-en.html">Contact</a></li>
-        </ul>
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logoPrincipal.png" alt="SAR Logo" class="logoPrincipal img-fluid">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index-en.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="projects-en.html">Projects</a></li>
+            <li class="nav-item"><a class="nav-link active" href="about-en.html">About Me</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact-en.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="ms-3">
+          <select class="language-switcher-minimal" onchange="changeLanguage(this.value)">
+            <option value="en">🇬🇧 English</option>
+            <option value="es">🇪🇸 Español</option>
+          </select>
+        </div>
+
       </div>
-      <div class="ms-3">
-        <select class="language-switcher-minimal" onchange="changeLanguage(this.value)">
-        <option value="en">🇬🇧 English</option>
-        <option value="es">🇪🇸 Español</option>
-      </select>
-      </div>
-    </div>
-  </nav>
+    </nav>
 
-  <header class="jumbotron-custom text-center">
-    <div class="container">
-      <h1 class="display-4">Santino Rodolfo Alico</h1>
-      <p class="lead">About Me</p>
-    </div>
+    <!-- HERO -->
+    <section class="jumbotron-custom text-center">
+      <div class="container">
+        <h1 class="display-4">Santino Rodolfo Alico</h1>
+        <p class="lead">About Me</p>
+      </div>
+    </section>
   </header>
 
-  <header class="container my-5">
-    <div class="row align-items-center g-4">
-      <div class="col-12 col-md-4 text-center">
-        <div class="media-hover" onclick="manejarClick(this, event)" onmouseenter="hoverIn(this)"
-          onmouseleave="hoverOut(this)">
+  <!-- MAIN CONTENT -->
+  <main>
 
-          <img src="img/fotoCarnet.jpeg" class="img-fluid rounded mb-2" alt="Photo of Santino">
+    <!-- ABOUT SECTION -->
+    <section class="container my-5" aria-labelledby="about-title">
+      <div class="row align-items-center g-4">
 
-          <video class="w-100 rounded" muted>
-            <source src="img/video-output-228549D3-0AD1-43DB-A5DA-2BC6E0B7E806-1.mp4" type="video/mp4">
-          </video>
+        <div class="col-12 col-md-4 text-center">
+          <figure class="media-hover"
+            onclick="manejarClick(this, event)"
+            onmouseenter="hoverIn(this)"
+            onmouseleave="hoverOut(this)">
 
+            <img src="img/fotoCarnet.jpeg"
+              class="img-fluid rounded mb-2"
+              alt="Photo of Santino Alico">
+
+            <video class="w-100 rounded" muted>
+              <source src="img/WhatsApp Video 2026-01-29 at 6.38.59 PM.mp4" type="video/mp4">
+            </video>
+
+          </figure>
         </div>
-      </div>
 
-      <div class="col-12 col-md-8">
-        <div class="card p-4 h-100">
-          <h2 class="card-title mb-3">Who am I?</h2>
-          <p>
-            My name is Santino Alico, I am 19 years old.<br>
-            I am a web developer in training with strong motivation to create functional,
-            accessible, and visually appealing projects.
-          </p>
-          <p>
-            I consider myself a responsible and consistent person, with strong teamwork skills
-            and a constant desire to learn new technologies.
-          </p>
+        <div class="col-12 col-md-8">
+          <article class="card p-4 h-100">
+            <h2 id="about-title" class="card-title mb-3">Who am I?</h2>
+            <p>
+              My name is Santino Alico, I am 19 years old.<br>
+              I am a web developer in training with strong motivation to create functional,
+              accessible, and visually appealing projects.
+            </p>
+            <p>
+              I consider myself a responsible and consistent person, with strong teamwork skills
+              and a constant desire to learn new technologies.
+            </p>
+          </article>
         </div>
+
       </div>
-    </div>
-  </header>
+    </section>
 
-  <header class="container my-5">
-    <h2 class="text-center mb-4">Academic Background</h2>
+    <!-- ACADEMIC BACKGROUND -->
+    <section class="container my-5" aria-labelledby="education-title">
+      <h2 id="education-title" class="text-center mb-4">Academic Background</h2>
 
-    <div class="row g-4 justify-content-center">
-      <div class="col-12 col-md-4">
-        <div class="card text-center p-3 h-100">
-          <h5 class="card-title">Web Application Development</h5>
-          <p>Florida Universitària</p>
-          <p class="text-muted">2024 – Present</p>
-        </div>
+      <div class="row g-4 justify-content-center">
+
+        <article class="col-12 col-md-4">
+          <div class="card text-center p-3 h-100">
+            <h3 class="h5 card-title">Web Application Development</h3>
+            <p>Florida Universitària</p>
+            <p class="text-muted">2024 – Present</p>
+          </div>
+        </article>
+
+        <article class="col-12 col-md-4">
+          <div class="card text-center p-3 h-100">
+            <h3 class="h5 card-title">Microcomputer Systems and Networks</h3>
+            <p>Florida Universitària</p>
+            <p class="text-muted">2022 – 2024</p>
+          </div>
+        </article>
+
       </div>
+    </section>
 
-      <div class="col-12 col-md-4">
-        <div class="card text-center p-3 h-100">
-          <h5 class="card-title">Microcomputer Systems and Networks</h5>
-          <p>Florida Universitària</p>
-          <p class="text-muted">2022 – 2024</p>
-        </div>
-      </div>
-    </div>
-  </header>
+    <!-- SKILLS -->
+    <section class="container my-5 text-center" aria-labelledby="skills-title">
+      <h2 id="skills-title" class="mb-4">Skills</h2>
 
-  <header class="container my-5 text-center">
-    <h2 class="mb-4">Skills</h2>
+      <ul class="d-flex flex-wrap justify-content-center gap-2 list-unstyled">
+        <li><span class="btn btn-sar btn-sm">Bootstrap</span></li>
+        <li><span class="btn btn-sar btn-sm">JavaScript</span></li>
+        <li><span class="btn btn-sar btn-sm">PHP</span></li>
+        <li><span class="btn btn-sar btn-sm">Angular</span></li>
+        <li><span class="btn btn-sar btn-sm">Symfony</span></li>
+      </ul>
+    </section>
 
-    <div class="d-flex flex-wrap justify-content-center gap-2">
-      <span class="btn btn-sar btn-sm">Bootstrap</span>
-      <span class="btn btn-sar btn-sm">JavaScript</span>
-      <span class="btn btn-sar btn-sm">PHP</span>
-      <span class="btn btn-sar btn-sm">Angular</span>
-      <span class="btn btn-sar btn-sm">Symfony</span>
-    </div>
-  </header>
+  </main>
 
+  <!-- FOOTER -->
   <footer class="pt-4">
     <div class="container">
       <div class="row text-center text-md-start align-items-center">
-        <div class="col-12 col-md-3 mb-3 d-flex justify-content-center">
-          <iframe src="https://www.google.com/maps?q=Florida%20Universit%C3%A0ria,%20Catarroja&output=embed"
-            class="map-container"></iframe>
-        </div>
-        <div class="col-12 col-md-3 mb-3 text-center">
+
+        <section class="col-12 col-md-3 mb-3 d-flex justify-content-center">
+          <iframe
+            src="https://www.google.com/maps?q=Florida%20Universit%C3%A0ria,%20Catarroja&output=embed"
+            class="map-container"
+            loading="lazy">
+          </iframe>
+        </section>
+
+        <section class="col-12 col-md-3 mb-3 text-center">
           <p class="derechosImgaen mb-0">
             &copy; 2024 Santino Rodolfo Alico.<br>
             All rights reserved.
           </p>
-        </div>
-        <div class="col-12 col-md-3 mb-3 d-flex justify-content-center gap-2">
+        </section>
+
+        <section class="col-12 col-md-3 mb-3 d-flex justify-content-center gap-2" aria-label="Social links">
           <a href="tel:+34622718731">
             <img src="img/imgTelefono.png" class="img-fluid Logos" alt="Phone">
           </a>
@@ -138,23 +172,29 @@
           <a href="https://www.linkedin.com/in/santino-alico-174660329/">
             <img src="img/imgLINKEDING.png" class="img-fluid Logos" alt="LinkedIn">
           </a>
-        </div>
-        <div class="col-12 col-md-3 mb-3 d-flex justify-content-center">
-          <a href="img/SANTINO ALICO CV (2).pdf" class="btn btn-outline-light btn-sm" target="_blank" download>
+        </section>
+
+        <section class="col-12 col-md-3 mb-3 d-flex justify-content-center">
+          <a href="img/SANTINO ALICO CV (2).pdf"
+            class="btn btn-outline-light btn-sm"
+            target="_blank"
+            download>
             📄 Download CV
           </a>
-        </div>
+        </section>
+
       </div>
     </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS -->
   <script>
     let lastTap = 0;
 
     function manejarClick(container, e) {
       e.preventDefault();
-
       const video = container.querySelector("video");
       const ahora = Date.now();
 
@@ -179,46 +219,30 @@
     }
 
     function hoverIn(container) {
-      if (container.classList.contains("activo")) return;
-      container.classList.add("preview");
+      if (!container.classList.contains("activo")) container.classList.add("preview");
     }
 
     function hoverOut(container) {
-      if (container.classList.contains("activo")) return;
-      container.classList.remove("preview");
+      if (!container.classList.contains("activo")) container.classList.remove("preview");
     }
+
     function changeLanguage(lang) {
-    const path = window.location.pathname;
-    const page = path.substring(path.lastIndexOf("/") + 1);
+      const path = window.location.pathname;
+      const page = path.substring(path.lastIndexOf("/") + 1);
 
-    const routes = {
-      "index.html": "index-en.html",
-      "index-en.html": "index.html",
+      const routes = {
+        "index.html": "index-en.html",
+        "index-en.html": "index.html",
+        "proyectos.html": "projects-en.html",
+        "projects-en.html": "proyectos.html",
+        "perfil.html": "about-en.html",
+        "about-en.html": "perfil.html",
+        "contacto.html": "contact-en.html",
+        "contact-en.html": "contacto.html"
+      };
 
-      "proyectos.html": "projects-en.html",
-      "projects-en.html": "proyectos.html",
-
-      "perfil.html": "about-en.html",
-      "about-en.html": "perfil.html",
-
-      "contacto.html": "contact-en.html",
-      "contact-en.html": "contacto.html"
-    };
-
-    if (routes[page]) {
-      window.location.href = routes[page];
+      if (routes[page]) window.location.href = routes[page];
     }
-  }
-
-  // Mantener idioma seleccionado
-  document.addEventListener("DOMContentLoaded", () => {
-    const selector = document.querySelector(".language-switcher");
-    if (!selector) return;
-
-    const page = window.location.pathname;
-
-    selector.value = page.includes("-en") ? "en" : "es";
-  });
   </script>
 
 </body>

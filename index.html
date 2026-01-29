@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio SAR</title>
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&family=Inter:wght@400;500&display=swap"
     rel="stylesheet">
@@ -14,114 +15,150 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="img/logoPrincipal.png" alt="Logo" class="logoPrincipal img-fluid">
-      </a>
+  <!-- HEADER / NAV -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logoPrincipal.png" alt="Logo SAR" class="logoPrincipal img-fluid">
+        </a>
 
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
-          <li class="nav-item"><a class="nav-link active" href="perfil.html">Sobre mí</a></li>
-          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-        </ul>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-label="Abrir navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
+            <li class="nav-item"><a class="nav-link" href="perfil.html">Sobre mí</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="ms-3">
+          <select class="language-switcher-minimal" onchange="changeLanguage(this.value)">
+            <option value="es">🇪🇸 Español</option>
+            <option value="en">🇬🇧 English</option>
+          </select>
+        </div>
+
       </div>
-      <div class="ms-3">
-      <select class="language-switcher-minimal" onchange="changeLanguage(this.value)">
-        <option value="es">🇪🇸 Español</option>
-        <option value="en">🇬🇧 English</option>
-      </select>
+    </nav>
+
+    <!-- HERO -->
+    <section class="jumbotron-custom text-center">
+      <div class="container">
+        <h1 class="display-4">Santino Rodolfo Alico</h1>
+        <p class="lead">Portfolio profesional · Desarrollo Web</p>
       </div>
-
-
-    </div>
-  </nav>
-
-  <header class="jumbotron-custom text-center">
-    <div class="container">
-      <h1 class="display-4">Santino Rodolfo Alico</h1>
-      <p class="lead">Portfolio profesional · Desarrollo Web</p>
-    </div>
+    </section>
   </header>
 
-  <header class="container my-5">
-    <div class="row g-4">
+  <!-- MAIN CONTENT -->
+  <main>
 
-      <div class="col-12 col-md-4 project-card-wrapper">
-        <div class="card h-100 text-center p-3">
-          <a href="https://www.santafemotores.com/" target="_blank">
-            <img src="img/sfMotores mejor imagen.png" class="card-img-top img-fluid" alt="SF Motores">
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">Página Web real</h5>
-            <p class="project-extra">
-              Proyecto web real desarrollado para una empresa con inteligencia artificial.
-              Incluye diseño, accesibilidad y una estructura adecuada.
-            </p>
-            <button class="btn btn-sar btn-expand btn-sm">Más info</button>
-            <button class="btn btn-secondary btn-close-expand btn-sm mt-2">Cerrar</button>
+    <!-- PROJECTS -->
+    <section class="container my-5" aria-labelledby="projects-title">
+      <h2 id="projects-title" class="visually-hidden">Proyectos</h2>
+
+      <div class="row g-4">
+
+        <!-- PROYECTO 1 -->
+        <article class="col-12 col-md-4 project-card-wrapper">
+          <div class="card h-100 text-center p-3">
+            <figure>
+              <a href="https://www.santafemotores.com/" target="_blank">
+                <img src="img/sfMotores mejor imagen.png"
+                  class="card-img-top img-fluid"
+                  alt="Sitio web SF Motores">
+              </a>
+            </figure>
+            <div class="card-body">
+              <h3 class="h5 card-title">Página Web real</h3>
+              <p class="project-extra">
+                Proyecto web real desarrollado para una empresa con inteligencia artificial.
+                Incluye diseño, accesibilidad y una estructura adecuada.
+              </p>
+              <button class="btn btn-sar btn-expand btn-sm">Más info</button>
+              <button class="btn btn-secondary btn-close-expand btn-sm mt-2">Cerrar</button>
+            </div>
           </div>
-        </div>
-      </div>
+        </article>
 
-      <div class="col-12 col-md-4 project-card-wrapper">
-        <div class="card h-100 text-center p-3">
-          <a href="https://gitec.es/" target="_blank">
-            <img src="img/LogoLevanteGaming.png" class="card-img-top img-fluid" alt="Levante Gaming">
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">Levante Gaming</h5>
-            <p class="project-extra">
-              Empresa dedicada a la venta mayorista de equipos IT, actuando como intermediaria
-              en actividades de fabricación y desarrollo de productos tecnológicos.
-            </p>
-            <button class="btn btn-sar btn-expand btn-sm">Más info</button>
-            <button class="btn btn-secondary btn-close-expand btn-sm mt-2">Cerrar</button>
+        <!-- PROYECTO 2 -->
+        <article class="col-12 col-md-4 project-card-wrapper">
+          <div class="card h-100 text-center p-3">
+            <figure>
+              <a href="https://gitec.es/" target="_blank">
+                <img src="img/LogoLevanteGaming.png"
+                  class="card-img-top img-fluid"
+                  alt="Sitio web Levante Gaming">
+              </a>
+            </figure>
+            <div class="card-body">
+              <h3 class="h5 card-title">Levante Gaming</h3>
+              <p class="project-extra">
+                Empresa dedicada a la venta mayorista de equipos IT, actuando como intermediaria
+                en actividades de fabricación y desarrollo de productos tecnológicos.
+              </p>
+              <button class="btn btn-sar btn-expand btn-sm">Más info</button>
+              <button class="btn btn-secondary btn-close-expand btn-sm mt-2">Cerrar</button>
+            </div>
           </div>
-        </div>
-      </div>
+        </article>
 
-      <div class="col-12 col-md-4 project-card-wrapper">
-        <div class="card h-100 text-center p-3">
-          <a href="https://www.vaprel.es/" target="_blank">
-            <img src="img/vaprelLogo.png" class="card-img-top img-fluid" alt="Vaprel">
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">Vaprel</h5>
-            <p class="project-extra">
-              Proyecto web desarrollado con HTML, CSS y JavaScript para la gestión
-              y visualización de información de forma sencilla y funcional.
-            </p>
-            <button class="btn btn-sar btn-expand btn-sm">Más info</button>
-            <button class="btn btn-secondary btn-close-expand btn-sm mt-2">Cerrar</button>
+        <!-- PROYECTO 3 -->
+        <article class="col-12 col-md-4 project-card-wrapper">
+          <div class="card h-100 text-center p-3">
+            <figure>
+              <a href="https://www.vaprel.es/" target="_blank">
+                <img src="img/vaprelLogo.png"
+                  class="card-img-top img-fluid"
+                  alt="Sitio web Vaprel">
+              </a>
+            </figure>
+            <div class="card-body">
+              <h3 class="h5 card-title">Vaprel</h3>
+              <p class="project-extra">
+                Proyecto web desarrollado con HTML, CSS y JavaScript para la gestión
+                y visualización de información de forma sencilla y funcional.
+              </p>
+              <button class="btn btn-sar btn-expand btn-sm">Más info</button>
+              <button class="btn btn-secondary btn-close-expand btn-sm mt-2">Cerrar</button>
+            </div>
           </div>
-        </div>
+        </article>
+
       </div>
+    </section>
 
-    </div>
-  </header>
+  </main>
 
-
+  <!-- FOOTER -->
   <footer class="pt-4">
     <div class="container">
       <div class="row text-center text-md-start align-items-center">
-        <div class="col-12 col-md-3 mb-3 d-flex justify-content-center">
-          <iframe src="https://www.google.com/maps?q=Florida%20Universit%C3%A0ria,%20Catarroja&output=embed"
-            class="map-container"></iframe>
-        </div>
-        <div class="col-12 col-md-3 mb-3 text-center">
+
+        <section class="col-12 col-md-3 mb-3 d-flex justify-content-center">
+          <iframe
+            src="https://www.google.com/maps?q=Florida%20Universit%C3%A0ria,%20Catarroja&output=embed"
+            class="map-container"
+            loading="lazy">
+          </iframe>
+        </section>
+
+        <section class="col-12 col-md-3 mb-3 text-center">
           <p class="derechosImgaen mb-0">
             &copy; 2024 Santino Rodolfo Alico.<br>
             Todos los derechos reservados.
           </p>
-        </div>
-        <div class="col-12 col-md-3 mb-3 d-flex justify-content-center gap-2">
+        </section>
+
+        <section class="col-12 col-md-3 mb-3 d-flex justify-content-center gap-2"
+          aria-label="Redes sociales">
           <a href="tel:+34622718731">
             <img src="img/imgTelefono.png" class="img-fluid Logos" alt="Teléfono">
           </a>
@@ -134,17 +171,24 @@
           <a href="https://www.linkedin.com/in/santino-alico-174660329/">
             <img src="img/imgLINKEDING.png" class="img-fluid Logos" alt="LinkedIn">
           </a>
-        </div>
-        <div class="col-12 col-md-3 mb-3 d-flex justify-content-center">
-          <a href="img/SANTINO ALICO CV (2).pdf" class="btn btn-outline-light btn-sm" target="_blank" download>
+        </section>
+
+        <section class="col-12 col-md-3 mb-3 d-flex justify-content-center">
+          <a href="img/SANTINO ALICO CV (2).pdf"
+            class="btn btn-outline-light btn-sm"
+            target="_blank"
+            download>
             📄 Descargar CV
           </a>
-        </div>
+        </section>
 
       </div>
     </div>
   </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS -->
   <script>
     document.querySelectorAll('.btn-expand').forEach(btn => {
       btn.addEventListener('click', () => {
@@ -166,38 +210,25 @@
     });
 
     function changeLanguage(lang) {
-    const path = window.location.pathname;
-    const page = path.substring(path.lastIndexOf("/") + 1);
+      const path = window.location.pathname;
+      const page = path.substring(path.lastIndexOf("/") + 1);
 
-    const routes = {
-      "index.html": "index-en.html",
-      "index-en.html": "index.html",
+      const routes = {
+        "index.html": "index-en.html",
+        "index-en.html": "index.html",
+        "proyectos.html": "projects-en.html",
+        "projects-en.html": "proyectos.html",
+        "perfil.html": "about-en.html",
+        "about-en.html": "perfil.html",
+        "contacto.html": "contact-en.html",
+        "contact-en.html": "contacto.html"
+      };
 
-      "proyectos.html": "projects-en.html",
-      "projects-en.html": "proyectos.html",
-
-      "perfil.html": "about-en.html",
-      "about-en.html": "perfil.html",
-
-      "contacto.html": "contact-en.html",
-      "contact-en.html": "contacto.html"
-    };
-
-    if (routes[page]) {
-      window.location.href = routes[page];
+      if (routes[page]) {
+        window.location.href = routes[page];
+      }
     }
-  }
-
-  // Mantener idioma seleccionado
-  document.addEventListener("DOMContentLoaded", () => {
-    const selector = document.querySelector(".language-switcher");
-    if (!selector) return;
-
-    const page = window.location.pathname;
-
-    selector.value = page.includes("-en") ? "en" : "es";
-  });
   </script>
-</body>
 
+</body>
 </html>
